@@ -23,16 +23,9 @@ Welcome to my repository containing the prerequisite web development tasks for t
 ## 📸 Screenshots
 
 *(Add screenshots of your running tasks here!)*
-* **Task 1 Portfolio Preview:** `![Portfolio Screenshot]("C:\Users\LOQ-PC\Pictures\Screenshots\Screenshot 2026-10-21 183106.png")`
-* **Task 2 Landing Page Preview:** `![Landing Page Screenshot]("C:\Users\LOQ-PC\Pictures\Screenshots\Screenshot 2026-10-21 183150.png")`
-* **Task 3 To-Do App Preview:** `![To-Do App Screenshot]("C:\Users\LOQ-PC\Pictures\Screenshots\Screenshot 2026-10-21 183225.png")`
+* **Task 1 Portfolio Preview:**<img width="1861" height="927" alt="Screenshot 2026-10-21 183106" src="https://github.com/user-attachments/assets/e39b4cb6-1b4a-45b4-952e-b675e4e2e4ff" />
+ 
+* **Task 2 Landing Page Preview:**<img width="1882" height="911" alt="Screenshot 2026-10-21 183150" src="https://github.com/user-attachments/assets/38e85dcb-4782-4f2a-967f-57811c2df464" />
 
----
+* **Task 3 To-Do App Preview:** <img width="1893" height="905" alt="Screenshot 2026-10-21 183225" src="https://github.com/user-attachments/assets/4f54e822-67a2-4e24-9cdb-8a23bbecd44c" />
 
-## 🛠️ How to Run the Projects Locally
-
-To run any of these tasks on your machine, follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-omdhasal27/aws_sbv_web_tasks.git](https://github.com/your-omdhasal27/aws_sbv_web_tasks.git)
