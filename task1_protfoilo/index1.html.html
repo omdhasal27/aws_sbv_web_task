@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is an HTML5 document -->
+<html lang="en">
+<head>
+    <!-- Sets character encoding so text displays correctly -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page scales properly on mobile screens (Responsive design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO title shown on the browser tab -->
+    <title>My Personal Portfolio</title>
+    <!-- Links our external CSS stylesheet -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- SEMANTIC HEADER TAG: Contains the top navigation bar -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo or your name -->
+            <div class="logo">MyPortfolio</div>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Light/Dark Mode Button (Required by Task 1) -->
+            <button id="theme-toggle" aria-label="Toggle light and dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <!-- SEMANTIC MAIN TAG: Wraps the primary content of the page -->
+    <main>
+
+        <!-- INTRO SECTION -->
+        <section id="intro" class="intro-section">
+            <div class="intro-content">
+                <!-- Using an alt tag for accessibility -->
+                <img src="C:\Users\LOQ-PC\Downloads\1000206747.jpg" alt="Profile picture placeholder" class="profile-img">
+                <h1>Hi, I'm <span class="highlight">Om Dhasal</span></h1>
+                <p>An enthusiastic First Year student learning Web Development and building cool projects.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Basic HTML5</div>
+                <div class="skill-card">learning Python</div>
+                <div class="skill-card">Basic JavaScript</div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio built with semantic HTML, CSS, and basic JavaScript.</p>
+                </article>
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <h3>Landing Page Clone</h3>
+                    <p>A fully responsive product landing page clone using modern CSS Flexbox and Grid.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for opportunities or collaboration!</p>
+            
+            <!-- Accessible Form with explicit labels -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Type your message here"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- SEMANTIC FOOTER TAG -->
+    <footer>
+        <p>&copy; 2026 Your Name. Built for AWS Student Builder Group recruitment[cite: 1].</p>
+    </footer>
+
+    <!-- Links our JavaScript file at the bottom so HTML loads first -->
+    <script src="script1.js"></script>
+</body>
+</html>

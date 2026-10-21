@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures proper scaling on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFlow - Landing Page Clone</title>
+    <!-- Links our external stylesheet -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- NAVBAR SECTION (Uses Flexbox and CSS-only Hamburger Menu) -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">CloudFlow</div>
+            
+            <!-- HIDDEN CHECKBOX TRICK: Powers the pure CSS hamburger menu without JS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-btn">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: Big attention-grabbing top banner -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Build faster with our cloud workflow</h1>
+                <p>The simplest platform for modern teams to scale, manage, and deploy applications seamlessly.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn primary-btn">Start Free Trial</a>
+                    <a href="#features" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION (Uses CSS Grid) -->
+        <section id="features" class="features-section">
+            <h2>Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to grow your product efficiently.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>⚡ Lightning Fast</h3>
+                    <p>Optimized infrastructure designed to deliver maximum speed globally.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Secure by Default</h3>
+                    <p>Enterprise-grade security and end-to-end encryption for all your data.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Real-time Analytics</h3>
+                    <p>Monitor performance metrics with live updating visual dashboards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING CARDS SECTION (Uses CSS Grid) -->
+        <section id="pricing" class="pricing-section">
+            <h2>Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Choose the plan that fits your team size.</p>
+
+            <div class="pricing-grid">
+                <!-- Pricing Card 1 -->
+                <div class="pricing-card">
+                    <h3>Free Plan</h3>
+                    <div class="price">$0<span>/month</span></div>
+                    <p>For hobbyists and personal exploration.</p>
+                    <ul>
+                        <li>1 User Account</li>
+                        <li>Basic Analytics</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <a href="#" class="btn secondary-btn">Choose Free</a>
+                </div>
+
+                <!-- Pricing Card 2 (Highlighted) -->
+                <div class="pricing-card popular">
+                    <span class="badge">Most Popular</span>
+                    <h3>Pro Plan</h3>
+                    <div class="price">$29<span>/month</span></div>
+                    <p>For growing teams and professional developers.</p>
+                    <ul>
+                        <li>Up to 10 Users</li>
+                        <li>Advanced Analytics</li>
+                        <li>Priority 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">Choose Pro</a>
+                </div>
+
+                <!-- Pricing Card 3 -->
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$99<span>/month</span></div>
+                    <p>For large organizations requiring custom scale.</p>
+                    <ul>
+                        <li>Unlimited Users</li>
+                        <li>Custom Integrations</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#" class="btn secondary-btn">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <p>&copy; 2026 CloudFlow Inc. Built for AWS Student Builder Group Task 2.</p>
+    </footer>
+
+</body>
+</html>

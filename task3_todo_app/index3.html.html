@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple To-Do App</title>
+    <style>
+        /* Minimal CSS for basic layout and clean look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Strikethrough style for completed items */
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .controls {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .filter-buttons button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My To-Do List</h2>
+
+    <!-- Input section to add new tasks -->
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <button id="addBtn">Add</button>
+    </div>
+
+    <!-- Container where task items will be listed -->
+    <ul id="taskList"></ul>
+
+    <!-- Controls section: counter and filter buttons -->
+    <div class="controls">
+        <span id="itemCounter">0 items left</span>
+        <div class="filter-buttons">
+            <button id="filterAll">All</button>
+            <button id="filterActive">Active</button>
+            <button id="filterCompleted">Completed</button>
+        </div>
+    </div>
+
+    <!-- Plain JavaScript script file -->
+    <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+/* --- GLOBAL STYLES & CSS VARIABLES --- */
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #ffffff;
+    --text-color: #1f2937;
+    --muted-text: #4b5563;
+    --card-bg: #f9fafb;
+    --border-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVBAR (Uses Flexbox) --- */
+.header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex; /* Flexbox aligns logo left and links right */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- HAMBURGER MENU SETUP (Hidden by default on desktop) --- */
+.menu-toggle, .hamburger {
+    display: none;
+}
+
+/* --- REUSABLE BUTTON STYLES --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.secondary-btn:hover {
+    background-color: var(--card-bg);
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: var(--muted-text);
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* --- FEATURES SECTION (Uses CSS Grid) --- */
+.features-section, .pricing-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features-section h2, .pricing-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: var(--muted-text);
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.features-grid {
+    display: grid; /* CSS Grid creates responsive multi-column layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Smooth hover lift effect */
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* --- PRICING SECTION (Uses CSS Grid) --- */
+.pricing-grid {
+    display: grid; /* CSS Grid arranges pricing tiers cleanly */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.1);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111827;
+    margin: 15px 0;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--muted-text);
+    font-weight: normal;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin: 20px 0 30px 0;
+    flex-grow: 1;
+}
+
+.pricing-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--muted-text);
+}
+
+/* --- FOOTER --- */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111827;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE MEDIA QUERY & PURE CSS HAMBURGER MENU (Bonus) --- */
+@media (max-width: 768px) {
+    /* Reveal the hamburger button on screens smaller than 768px */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--text-color);
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    /* Hide desktop nav links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        padding: 20px;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* PURE CSS MAGIC: When the hidden checkbox is checked, display the navigation links! */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
