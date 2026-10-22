@@ -28,6 +28,10 @@ Welcome to my repository containing the prerequisite web development tasks for t
 
  
 * **Task 2 Landing Page Preview:**<img width="1882" height="911" alt="Screenshot 2026-10-21 183150" src="https://github.com/user-attachments/assets/38e85dcb-4782-4f2a-967f-57811c2df464" />
+<img width="1885" height="910" alt="Screenshot 2026-10-22 082741" src="https://github.com/user-attachments/assets/0caa2a1e-a466-45cf-9ebe-039be90b45db" />
+<img width="1882" height="905" alt="Screenshot 2026-10-22 083436" src="https://github.com/user-attachments/assets/02af03b3-964f-4099-ab08-2e94b172e054" />
+
+
 
 * **Task 3 To-Do App Preview:** <img width="1893" height="905" alt="Screenshot 2026-10-21 183225" src="https://github.com/user-attachments/assets/4f54e822-67a2-4e24-9cdb-8a23bbecd44c" />
 
