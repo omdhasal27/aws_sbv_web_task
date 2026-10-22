@@ -24,6 +24,8 @@ Welcome to my repository containing the prerequisite web development tasks for t
 
 *(Add screenshots of your running tasks here!)*
 * **Task 1 Portfolio Preview:**<img width="1861" height="927" alt="Screenshot 2026-10-21 183106" src="https://github.com/user-attachments/assets/e39b4cb6-1b4a-45b4-952e-b675e4e2e4ff" />
+<img width="1886" height="911" alt="Screenshot 2026-10-22 082552" src="https://github.com/user-attachments/assets/49640822-a4ed-4a05-aa43-4665e71ed370" />
+
  
 * **Task 2 Landing Page Preview:**<img width="1882" height="911" alt="Screenshot 2026-10-21 183150" src="https://github.com/user-attachments/assets/38e85dcb-4782-4f2a-967f-57811c2df464" />
 
