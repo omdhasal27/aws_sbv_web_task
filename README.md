@@ -1,4 +1,4 @@
-# AWS Student Builder Group - Web Development Prerequisite Tasks
+# AWS Student Group - Web Development Prerequisite Tasks
 
 Welcome to my repository containing the prerequisite web development tasks for the AWS Student Builder Group recruitment process.
 
@@ -34,4 +34,6 @@ Welcome to my repository containing the prerequisite web development tasks for t
 
 
 * **Task 3 To-Do App Preview:** <img width="1893" height="905" alt="Screenshot 2026-10-21 183225" src="https://github.com/user-attachments/assets/4f54e822-67a2-4e24-9cdb-8a23bbecd44c" />
+<img width="1900" height="910" alt="Screenshot 2026-10-22 083644" src="https://github.com/user-attachments/assets/c22417ac-bded-4662-9a93-e8289e295940" />
+
 
